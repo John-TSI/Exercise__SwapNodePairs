@@ -3,7 +3,7 @@
 
 ListNode* Solution::swapPairs(ListNode* head)
 {
-    if(!head || !head->next){ return (head) ? head : nullptr; }  // handles empty list and single node
+    if(!head || !head->next){ return head; }  // handles empty list and single node
 
     ListNode* leader{head->next}, * follower{head};
 
